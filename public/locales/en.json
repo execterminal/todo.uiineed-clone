@@ -1,5 +1,6 @@
 {
     "home": {
-        "inputPlaceholder": "Add to-do item..."
+        "inputPlaceholder": "Add to-do item...",
+        "inputAddButton": "Add"
     }
 }

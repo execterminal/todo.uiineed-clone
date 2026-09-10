@@ -1,7 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/home";
 
-import { useTranslation } from "react-i18next";
+console.log("starting app.tsx");
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
     </Routes>
+    // <h1>App.tsx</h1>
   );
 }
 
