@@ -1,0 +1,88 @@
+# ALL
+
+npm i -D @types/react react @vitejs/plugin-react @types/react-dom react-dom @types/react-router-dom react-router-dom
+npm install tailwindcss @tailwindcss/vite
+
+
+
+
+# npm create vite@latest . -- --template 
+
+# cannot use jsx unless the '--jsx' flag is provided
+
+Go to the command palette CTRL+Shift+P (Or ⌘+Shift+P on Mac).
+Choose "TypeScript: Select a TypeScript Version...".
+Choose "Use workspace Version".
+
+in tsconfig.json
+  "compilerOptions": {
+          "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"]
+}
+"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+
+
+
+
+# VITE
+in tsconfig.json
+{
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}
+
+
+
+
+in vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { URL, fileURLToPath } from 'url'
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      comp: fileURLToPath(new URL('./src/components/', import.meta.url)),
+      forth: fileURLToPath(new URL('./src/first/second/third/forth/', import.meta.url))
+    }},
+    
+  plugins: [react(), tailwindcss()],
+});
+
+
+
+
+# UI
+
+Check tsconfig.json
+For a Vite + TypeScript project, add/update:
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+    }
+  }
+"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
+
+npx shadcn@latest init
+npx shadcn@latest add questionnaire
+
+
+
+
+
+
+
+
+
+
+
+npm i -D @types/node
+
+
+
