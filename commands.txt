@@ -1,6 +1,6 @@
 # ALL
 
-npm i -D @types/react react @vitejs/plugin-react @types/react-dom react-dom @types/react-router-dom react-router-dom
+npm i -D @types/react react @vitejs/plugin-react @types/react-dom react-dom @types/react-router-dom react-router-dom @types/node 
 npm install tailwindcss @tailwindcss/vite
 
 

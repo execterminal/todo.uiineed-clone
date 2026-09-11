@@ -10,7 +10,7 @@ i18n
   .use(initReactI18next)
   .use(ChainedBackend)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "chinese",
     supportedLngs: ["en", "chinese"],
     defaultNS: "translation",
     interpolation: { escapeValue: false },
@@ -30,9 +30,11 @@ i18n
     },
   });
 
-export const toggleLanguage = () => {
-  const newLang = i18n.language === "en" ? "chinese" : "en";
-  i18n.changeLanguage(newLang);
+export const enToChinese = () => {
+  i18n.changeLanguage("chinese")
+}
+export const chineseToEn = () => {
+  i18n.changeLanguage("en");
 };
 
 export default i18n;

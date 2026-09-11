@@ -1,0 +1,24 @@
+{
+  "home": {
+    "inputPlaceholder": "添加待办事项...",
+    "inputAddButton": "添加",
+
+    "mainT1": "全部完成",
+    "mainT2": "立即行动，让生活更简单。☕",
+    "mainText1": "添加你的第一个待办事项！📝",
+    "mainText2": "使用提示 💡：",
+    "mainText3": "✔️ 按 Enter 键提交操作。",
+    "mainText4": "✔️ 拖动以重新排序待办事项（仅限电脑端）",
+    "mainText5": "✔️ 双击编辑标语和任务。",
+    "mainText6": "✔️ 在右侧边栏使用快捷操作。",
+    "mainText7": "🔒 你的数据存储在浏览器本地。",
+    "mainText8": "📝 支持数据下载和导入。",
+
+    "about": "关于",
+
+    "miniOpen": " 打开✨",
+    "miniAll": "全部",
+    "miniTrash": "回收站",
+    "miniImport": "导入(txt/json)"
+  }
+}

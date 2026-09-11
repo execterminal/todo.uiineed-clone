@@ -12,6 +12,13 @@
         "mainText5": "✔️ Double-click to edit slogan and tasks.",
         "mainText6": "✔️ Access quick actions in the right sidebar.",
         "mainText7": "🔒 Your data is stored locally in your browser.",
-        "mainText8": "📝 Supports data download and import. "
+        "mainText8": "📝 Supports data download and import. ",
+
+        "about": "about",
+
+        "miniOpen": " OPEN✨",
+        "miniAll": "All",
+        "miniTrash": "Trash",
+        "miniImport": "import(txt/json)"
     }
 }
