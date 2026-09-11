@@ -1,6 +1,17 @@
 {
     "home": {
         "inputPlaceholder": "Add to-do item...",
-        "inputAddButton": "Add"
+        "inputAddButton": "Add",
+
+        "mainT1": "Mark All Done",
+        "mainT2": "Act Now, Simplify Life.☕",
+        "mainText1": "Add Your First To-Do Item! 📝",
+        "mainText2": "Usage Tips 💡:",
+        "mainText3": "✔️ Press Enter to submit actions.",
+        "mainText4":  "✔️ Drag to reorder your to-dos (PC only)",
+        "mainText5": "✔️ Double-click to edit slogan and tasks.",
+        "mainText6": "✔️ Access quick actions in the right sidebar.",
+        "mainText7": "🔒 Your data is stored locally in your browser.",
+        "mainText8": "📝 Supports data download and import. "
     }
 }

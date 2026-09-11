@@ -9,35 +9,53 @@ const Home: React.FC = () => {
   return (
     <div className="bg-background w-full h-screen">
       <div className="flex justify-center items-center flex-col">
-        <div className="border border-red-300 w-full h-30 flex justify-center items-center">
+        <div className="w-full h-30 flex justify-center items-center">
           <Input placeholder={t("home.inputPlaceholder")}></Input>
           <Button className="rounded-r-2xl border-border border-l-0 h-17 w-25 bg-myred cursor-pointer">
             {t("home.inputAddButton")}
           </Button>
-          {/* <button className="border border-l-2xl">Add</button> */}
         </div>
 
-        <div className="flex">
-          <Button className="bg-mygreen border-border border-r-0 border-b-0 rounded-tl-2xl h-10 w-40">
-            Mark All Done
-          </Button>
-          <Button className="font-bold hover:bg-#8cd4cb border-border border-b-0 rounded-tr-2xl bg-foreground hover:bg-myyellow1 h-10 w-127 flex justify-start p-5">
-            Act Now, Simplify Life.☕
-          </Button>
-        </div>
+        <div className="flex justify-end items-start w-265">
+          <div>
+            <div className="flex">
+              <Button className="bg-mygreen border-border border-r-0 border-b-0 rounded-tl-2xl h-10 w-40">
+                {t("home.mainT1")}
+              </Button>
+              <Button className="font-bold hover:bg-#8cd4cb border-border border-b-0 rounded-tr-2xl bg-foreground hover:bg-myyellow1 h-10 w-135 flex justify-start p-5">
+                {t("home.mainT2")}
+              </Button>
+            </div>
 
-        <div className="border w-167 bg-foreground p-10 flex flex-col gap-4 pb-20">
-          <p>Add Your First To-Do Item! 📝</p>
-          <p>Usage Tips 💡:</p>
-          <p>✔️ Press Enter to submit actions.</p>
-          <p>✔️ Drag to reorder your to-dos (PC only)</p>
-          <p>✔️ Double-click to edit slogan and tasks.</p>
-          <p>✔️ Access quick actions in the right sidebar.</p>
-          <p>🔒 Your data is stored locally in your browser.</p>
-          <p>📝 Supports data download and import. </p>
-        </div>
+            <div className="border w-175 bg-foreground p-10 flex flex-col gap-4 pb-20 ">
+              <p>{t("home.mainText1")}</p>
+              <p>{t("home.mainText2")}</p>
+              <p>{t("home.mainText3")}</p>
+              <p>{t("home.mainText4")}</p>
+              <p>{t("home.mainText5")}</p>
+              <p>{t("home.mainText6")}</p>
+              <p>{t("home.mainText7")}</p>
+              <p>{t("home.mainText8")}</p>
+            </div>
 
-        <div className="border border-t-0 rounded-b-2xl bg-foreground w-167 h-10"></div>
+            <div className="border border-t-0 rounded-b-2xl bg-foreground w-175 h-10 hover:bg-myyellow1"></div>
+          </div>
+
+          <div className="flex flex-col ml-10 text-center">
+            <p className="bg-mygreen border rounded-t-lg border-b-0 font-bold w-35 h-8 flex justify-center items-center">
+              OPEN✨
+            </p>
+            <Button className="bg-myred border-berder border-b-0  w-35 h-8 flex justify-center items-center">
+              All
+            </Button>
+            <Button className="bg-foreground border-berder border-b-0  w-35 h-8 flex justify-center items-center">
+              Trash
+            </Button>
+            <Button className="bg-foreground border-berder rounded-b-lg  w-35 h-8 flex justify-center items-center">
+              import(txt/json)
+            </Button>
+          </div> 
+        </div>
       </div>
     </div>
   );
