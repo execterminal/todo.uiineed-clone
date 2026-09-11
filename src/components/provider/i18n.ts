@@ -10,11 +10,12 @@ i18n
   .use(initReactI18next)
   .use(ChainedBackend)
   .init({
-    fallbackLng: "chinese",
+    fallbackLng: "en",
     supportedLngs: ["en", "chinese"],
     defaultNS: "translation",
     interpolation: { escapeValue: false },
     debug: true,
+
     backend: {
       backends: [
         HttpBackend,
@@ -31,8 +32,8 @@ i18n
   });
 
 export const enToChinese = () => {
-  i18n.changeLanguage("chinese")
-}
+  i18n.changeLanguage("chinese");
+};
 export const chineseToEn = () => {
   i18n.changeLanguage("en");
 };

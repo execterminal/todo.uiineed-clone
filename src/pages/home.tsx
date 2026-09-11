@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import i18n from "@/components/provider/i18n";
 
 import { FaGithub } from "react-icons/fa";
 
@@ -12,18 +13,22 @@ const Home: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-background w-full h-screen">
-      <nav className="h-max flex justify-end p-5">
+      <form className="h-max flex justify-end p-5">
         <a className="pr-5" href="https://github.com" target="_blank">
           <FaGithub className="w-5 h-6 pt-1" />
         </a>
         <p className="pr-5">{t("home.about")}</p>
-        <Button className="pr-1" formAction={chineseToEn}>En</Button>
+        <Button className="pr-1 ${i}" type="submit" formAction={chineseToEn}>
+          En
+        </Button>
         <p className="pr-1">/</p>
-        <Button formAction={enToChinese}>中</Button>
-      </nav>
+        <Button type="submit" formAction={enToChinese}>
+          中
+        </Button>
+      </form>
 
       <div className="flex justify-center items-center flex-col">
-        <div className="w-full h-30 flex justify-center items-center">
+        <form className="w-full h-30 flex justify-center items-center">
           <Input
             placeholder={t("home.inputPlaceholder")}
             type="text"
@@ -35,7 +40,7 @@ const Home: React.FC = () => {
           >
             {t("home.inputAddButton")}
           </Button>
-        </div>
+        </form>
 
         <div className="flex justify-end items-start w-265">
           <div>
@@ -64,7 +69,7 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col ml-10 text-center">
             <p className="bg-mygreen border rounded-t-lg border-b-0 font-bold w-35 h-8 flex justify-center items-center">
-             {t("home.miniOpen")}
+              {t("home.miniOpen")}
             </p>
             <Button className="bg-myred border-berder border-b-0  w-35 h-8 flex justify-center items-center">
               {t("home.miniAll")}
